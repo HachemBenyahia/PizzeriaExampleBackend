@@ -5,8 +5,10 @@ namespace App\Entity;
 use App\Repository\RoleRepository;
 use Doctrine\ORM\Mapping as ORM;
 
+use App\Entity\EntityInterface;
+
 #[ORM\Entity(repositoryClass: RoleRepository::class)]
-class Role
+class Role implements EntityInterface
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
