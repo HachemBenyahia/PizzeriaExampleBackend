@@ -8,6 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 use App\Entity\EntityInterface;
 
 #[ORM\Entity(repositoryClass: RoleRepository::class)]
+#[ORM\Table(name: "`role`")]
 class Role implements EntityInterface
 {
     #[ORM\Id]
