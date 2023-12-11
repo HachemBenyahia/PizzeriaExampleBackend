@@ -1,6 +1,8 @@
 <?php
 
-    interface EntityInterface
-    {
-        public function serialize();
-    }
+namespace App\Entity;
+
+interface EntityInterface
+{
+    public function serialize();
+}
